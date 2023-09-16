@@ -8,15 +8,15 @@ const main = async () => {
   await orm.getMigrator().up();
 
   // Fork the EntityManager
-  const em = orm.em.fork();
+  // const em = orm.em.fork();
 
-  const post = em.create(Post, {
-    title: "my first post",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  } as Post);
+  // const post = em.create(Post, {
+  //   title: "my first post",
+  //   createdAt: new Date(),
+  //   updatedAt: new Date(),
+  // } as Post);
 
-  await em.persistAndFlush(post);
+  // await em.persistAndFlush(post);
 };
 
 main();
